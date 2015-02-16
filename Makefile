@@ -1,6 +1,6 @@
 # simple Makefile
 VSN=0.9.0
-ERLC_FLAGS=
+ERLC_FLAGS= +debug_info
 SOURCES=$(wildcard src/*.erl)
 HEADERS=$(wildcard include/*.hrl)
 OBJECTS=$(SOURCES:src/%.erl=ebin/%.beam)
